@@ -29,3 +29,26 @@ We must keep the sentiment of human users that may be deceived by the AI's human
 **Q**uestion(s): 
 - Could we say that Weizenbaum's ELIZA has succeeded at the imitation game as Turing had described it? Since ELIZA was able to convince some people to think that it was human, one could say that it was able to pass the Turing test. How about ChatGPT when *it* was newly introduced to the public?
 -  Not necessarily a question, but a potential point of discussion would be about the Chinese Room Experiment as a reaction to the imitation game.
+
+## Paper 5: Turn-taking in Conversational Systems and Human-Robot Interaction A Review, by G. Skantze
+**C**ore quote(s):
+- The coordination of when a turn will transition, and who will speak next, relies on multiple signals across different modalities, including syntax, pragmatics, prosody and gaze.
+- [...] [D]espite this progress in computational modelling of turn-taking, it is interesting to note how simplistic turn-taking models in most state-of-the-art conversational systems still are.
+
+**A**rgument(s):
+Dr. Skantze does not necessarily attempt to argue for a certain view.
+In this paper, he offers the reader overviews of research and advancements within the field of turn-taking in conversation and the varying aspects of the turn-taking process that must or may be accounted for when developing conversational computer systems.
+Dr. Skantze opens with an explanation of the fundamental concepts of turn-taking, and follows up by elaborating on the cues given during a conversation that may indicate a turn-taking-related phenomenon.
+Specifically, he explains the varying types of cues in turn-taking, including syntax, semantics, pragmatics, prosody, gaze, gestures, and breathing, and talks about the existing research done on these turn-taking cues and what researchers have found in regards to how specific cues are used for specific purposes, such as turn-yielding cues and turn-holding cues.
+Finally, dr. Skantze talks about four different problems that a conversational computer interface will face:
+1. Picking up on turn-yielding cues, knowing which cues do and do not yield turns;
+2. Coping with backchannels and other user interruptions;
+3. Generating turn-yielding cues for the human speaker; and
+4. Coping with turn-taking in multi-party and situated interactions.
+
+**L**ink: 
+The link this paper has with the course is very clear: this paper provides an extensive overview of the varying aspects designers and engineers of conversational computer systems must be aware of.
+It is important that the students of the course, in preparation of the course's project, are aware of the challenges in turn-taking that they will encounter when working on the conversational AI they will build, and that they know the existing terminology for turn-taking research.
+Furthermore, the paper may help the students in finding existing solutions to their problems and potential improvements to their conversational AI.
+
+**Q**uestion(s): 
