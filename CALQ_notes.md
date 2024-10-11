@@ -28,7 +28,7 @@ We must keep the sentiment of human users that may be deceived by the AI's human
 
 **Q**uestion(s): 
 - Could we say that Weizenbaum's ELIZA has succeeded at the imitation game as Turing had described it? Since ELIZA was able to convince some people to think that it was human, one could say that it was able to pass the Turing test. How about ChatGPT when *it* was newly introduced to the public?
--  Not necessarily a question, but a potential point of discussion would be about the Chinese Room Experiment as a reaction to the imitation game.
+- Not necessarily a question, but a potential point of discussion would be about the Chinese Room Experiment as a reaction to the imitation game.
 
 ## Paper 5: Turn-taking in Conversational Systems and Human-Robot Interaction A Review, by G. Skantze
 **C**ore quote(s):
@@ -56,6 +56,7 @@ Furthermore, the paper may help the students in finding existing solutions to th
 ## Paper 6: Dialogue Agents 101: A Beginner’s Guide to Critical Ingredients for Designing Effective Conversation, by Kumar et al.
 **C**ore quote(s):
 - [...] [W]e [...] offer a panoramic view of the various constituents comprising a dialogue-based system, elucidate the individual tasks involved in their development, and highlight the typical datasets and state-of-the-art methodologies employed for designing and evaluating these components.
+- [...] [W]e propose the [UNIT](https://github.com/LCS2-IIITD/UNIT) dataset, a unified dialogue dataset comprising approximately four million conversations. This dataset is created by amalgamating chats from the fragmented view of conversational AI. Specifically, we consider the 39 datasets listed in Table 1 and extract natural language conversations from each of them.
 
 **A**rgument(s):
 Kumar et al. provide the reader an overview of relevant aspects in regards to the design and development of conversational agents.
@@ -85,7 +86,14 @@ Kumar et al. argue that they have found 11 tasks that a conversational agent can
   - "In order to fully grasp the user’s intention, it is crucial to uncover their affective attributes, including emotions and sarcasm, and incorporate them into the agent’s reply."
 
 For every one of the eleven conversational tasks proposed, Kumar et al. give lists of existing datasets that can be used to train models on that specific task, architectures of existing agents that have been developed for that conversational task, and current key challenges in developing conversational agents for that task.
+Additionally, Kumar et al. also provide overviews of research about dialogue-specific pretraining objectives for LLMs and evaluation techniques.
+Finally, Kumar et al. introduce their own dataset called Unit, an aggregation of the many datasets they have discussed in the rest of their paper.
+To show the usefulness of their dataset, they finetune 5 existing models on it an show performance improvements on the 11 conversational tasks.
 
 **L**ink: 
+The relevance of this paper to the course is found in the two main things that it offers to us, prospective designers and engineers of conversational agents: an aggregation of the varying tasks that we may want our conversational agent to be capable of, and an aggregation of existing datasets that can be used to train agents on one or multiple of those tasks.
+This paper, then, could be a useful resource when developing a conversational system in the second half of this course.
+I think that this paper and paper 5 by Skantze complement each other for the design and engineering of conversational systems: while the paper by Skantze provides us an overview of the challenges that we may face in designing and implementing a systems capable of human-like conversation in multiple modalities, Kumar et al. provide us existing datasets and implementations of conversational agents.
+However, for our purposes, there does exist a major gap between these two papers: all of Kumar et al.'s aggregates only consists of text-based conversations, while we will attempt to build a speech-based or multimodal conversational agent.
 
 **Q**uestion(s): 
