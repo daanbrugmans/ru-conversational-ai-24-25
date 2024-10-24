@@ -46,7 +46,7 @@
 
 \graphicspath{{./images}}
 
-\title{Conversational AI Take-Home Exam}
+\title{Conversational AI --- Take-Home Exam}
 
 \author{Daan Brugmans \\
   Radboud University\\
@@ -73,7 +73,7 @@
 % \end{figure}
 
 Despite significant improvements in language modelling techniques in the past half decade, current state-of-the-art conversational interfaces are far removed from completely mimicking human conversation.
-There exist varying aspects of human-to-human conversations that modern conversational AIs are not making use of yet, not to their fullest extent, or even at all.
+There exist varying aspects of human-to-human conversations that modern conversational AIs are not making use of yet, either not to their fullest extent, or even at all.
 In this essay, I will briefly touch on some of these foundations of human conversation, and relate them to the Alexa voice assistant.
 
 \citet{skantze2021turntaking} provides a broad overview of the many components that underlie the turn-taking process in human interaction.
@@ -85,8 +85,8 @@ This multimodality of conversation is something that most state-of-the-art conve
 
 However, even Furhat will have trouble when attempting to truly mimic human-to-human conversation.
 \citet{levinson2019natural} shows that the multimodality of conversation extends beyond the turn-taking mechanism, and is built into human conversation itself.
-Human conversation, they state, consists of many design features, which include not only turn-taking, but also metacommunication, such as repair mechanisms and backchannels, and a motivation underlying the conversation - two aspects of conversation relevant for this essay - and more.
-Metacommunication, for example, has been shown to be vital in human-to-human conversation: according to work by \citet{dingemanse2024interactive}, the repair mechanism, for example, seems to help listeners in decreasing cognitive load significantly by bouncing the load back to the speaker.
+Human conversation, they state, consists of many design features, which include not only turn-taking, but also metacommunication, such as repair mechanisms and backchannels, and the motivation underlying the conversation - two aspects of conversation relevant for this essay - and more.
+Metacommunication, for example, has been shown to be vital in human-to-human conversation: according to work by \citet{dingemanse2024interactive}, the repair mechanism, for example, seems to help listeners in decreasing cognitive load significantly by bouncing the cognitive load back to the speaker.
 By initiating repair, the speaker can assist the listener in decreasing the cognitive load, making the conversation more of an effort of both parties.
 This utilization of repair is lacking in conversational AI systems, as it is very hard to implement; the open-endedness of conversation not only causes the range of potential repair initiations to be very large, but as \citeauthor{dingemanse2024interactive} show, the formulated repair initiation should preferably be as specific as possible in order to minimize cognitive load.
 Due to the cost of repair initiation in AI systems, it is often foregone as a feature, as is the case with Alexa, who will only make clear that she has not understood the speaker once they are done speaking entirely, and her "repair" will be very non-specific ("Sorry, I didn't get that").
@@ -96,17 +96,29 @@ This design exists due to the purpose that Alexa has: being a voice assistant wh
 \citet{enfield2017concept} talk about the concept of "action in interaction", which means that (a purpose of) action is rooted into conversation.
 When we communicate, we have a reason for doing so, and we use conversation to relay the action that we wish to fulfill.
 When we speak to Alexa, she is expected to listen to what we have to say and is expected to fulfill the request embedded into our utterance; she was even designed this way.
-Her design supports her in making her role in the conversation clear, as otherwise, she would have difficulties in participating in worthwhile conversation.
+However, this design also prevents her from deviating from this standard "request-response" structure.
+She is incapable of initiating conversation herself, of barging into a person's speech, or even having multi-turn conversations.
+These limitations are important for her role as a voice assistant, but prevents her from being a truly "conversational" system.
+Alexa's design supports her in making her role in the conversation clear, as otherwise, she would have difficulties in participating in worthwhile conversation.
 This is another issue conversational systems face: in human conversation, the speaker and listener hold each other accountable, and they can be "punished" on the basis of this accountability.
 Conversational AIs do not have a sense of such accountability and do not seem to be able to "understand" it.
 For example, requesting Alexa to play a song that she cannot find may have her say "Sorry, I don't know that".
-Alexa's reaction is quite worthless, but her lack of sense of accountability prevents her from understanding that.
+Alexa's reaction is quite worthless, but her lack of sense of accountability, partially built into her design, prevents her from understanding that.
 
-% Paper 2: Can Alexa really have a conversation?
 In fact, it may be argued that Alexa does not really "understand" the conversation at all.
-\citet{turing1950computing}
+\citet{turing1950computing}'s Imitation Game brings to mind the difference between a conversational AI acting like a human and a conversational AI actually thinking like a human; a conversational system that passes the Turing test does not necessarily need to work like a human.
+State-of-the-art conversational AIs are language models that aim to sound human and act in assistance of humans, but they do not act of their own volition.
+This is shown in their behavior: state-of-the-art conversational AIs do not initiate conversations with humans, are incapable of processing the conversational cues humans provide them, cannot dynamically intervene in a conversation by, e.g., initiating repair, do not experience the tyranny of accountability, have trouble with long multi-turn conversations, and are often prohibited from formulating opinions.
+Although modern conversational agents sound like humans, they are not capable of human-level conversation.
+By the standards of the state-of-the-art, we may consider their communications to be less than a true "human" conversation.
+Thus these conversational systems may not really by truly "conversational".
 
-% Paper 6: Building truly conversational systems is far from a finished problem, paper shows the sheer variety of conversation types we must implement
+As I have hopefully made clear, we are far removed from having "true" conversational AI systems.
+Only a fraction of the multitude of facets that encompass human conversation have been implemented in state-of-the-art conversational systems.
+Even still, papers such as the one from \citet{kumar2024dialogue} show that even the things that have been implemented are complex, and there already exist many resources for developing conversational systems.
+\citeauthor{kumar2024dialogue} describe 11 different tasks that a conversational AI can be designed towards, and these tasks are only for specifically text-based agents.
+I expect that the number of design features to consider in a review of multimodal conversational agent design would exceed the length of the review by \citeauthor{kumar2024dialogue}.
+Since many pillars of human-to-human conversation are not found in state-of-the-art systems yet, I consider the research problem of conversational AI to be one that is far from being resolved.
 
 \bibliography{custom}
 
